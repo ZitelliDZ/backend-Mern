@@ -1,0 +1,481 @@
+{
+	"info": {
+		"_postman_id": "f4c72e62-6845-4b38-84db-53adf6473174",
+		"name": "Auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10337977"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dni\":\"10000013\",\r\n    \"password\":\"123456789\",\r\n    \"personalPhoneId\":\"987123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:4001/api/users/login",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjUyNmU1MzhjZTNkZGExN2E5NTdmYiIsImlhdCI6MTY5NjkzNDMyOSwiZXhwIjoxNjk2OTM3OTI5fQ.qaWnDkCz25CI5_WnzGRzl_rG8X12Dr8_2-mh8eBjxDc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dni\" : \"10000022\",\r\n    \"name\" : \"Alumno, Nuevo\",\r\n    \"password\" : \"123456789\",\r\n    \"email\" : \"Almuno20@gmail.com\",\r\n    \"rol\" : \"Estudiante\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:4001/api/users/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verificar-token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dni\" : \"10000015\",\r\n    \"token\" : \"691915\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:4001/api/users/verificar-token",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"users",
+								"verificar-token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Initial-data",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjUyNmVhMzhjZTNkZGExN2E5NTgxZiIsImlhdCI6MTY5NjkzNTM5NiwiZXhwIjoxNjk2OTM4OTk2fQ.7eCxTu_LEd5GsXLJ58R9D9SxX6BiGhSpVkaANUKwH84",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pin\" : \"123343\",\r\n    \"password\" : \"12323423\",\r\n    \"personalPhoneId\" : \"123423\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:4001/api/users/initial-data/change/:token",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"users",
+								"initial-data",
+								"change",
+								":token"
+							],
+							"variable": [
+								{
+									"key": "token",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjUyNmVhMzhjZTNkZGExN2E5NTgxZiIsImlhdCI6MTY5NjkzNTM5NiwiZXhwIjoxNjk2OTM4OTk2fQ.7eCxTu_LEd5GsXLJ58R9D9SxX6BiGhSpVkaANUKwH84",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:4001/api/users/profile",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"users",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SecurityPin",
+			"item": [
+				{
+					"name": "Reset-pin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjUyNmVhMzhjZTNkZGExN2E5NTgxZiIsImlhdCI6MTY5NjkzNTc1NiwiZXhwIjoxNjk2OTM5MzU2fQ.JdHrkgz2pw3SnBtoRdrWcnUtinlmVaSsepFW77a3utM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Origin",
+								"value": "http://localhost:5173",
+								"description": "http://localhost:5173",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:4001/api/users/security-pin/reset-pin",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"users",
+								"security-pin",
+								"reset-pin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset-pin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjUyNmVhMzhjZTNkZGExN2E5NTgxZiIsImlhdCI6MTY5NjkzNTc1NiwiZXhwIjoxNjk2OTM5MzU2fQ.JdHrkgz2pw3SnBtoRdrWcnUtinlmVaSsepFW77a3utM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Origin",
+								"value": "http://localhost:5173",
+								"description": "http://localhost:5173",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pin\" : \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:4001/api/users/security-pin/reset-pin/737053",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"users",
+								"security-pin",
+								"reset-pin",
+								"737053"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Checkpin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjUyNmVhMzhjZTNkZGExN2E5NTgxZiIsImlhdCI6MTY5NjkzNTc1NiwiZXhwIjoxNjk2OTM5MzU2fQ.JdHrkgz2pw3SnBtoRdrWcnUtinlmVaSsepFW77a3utM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Origin",
+								"value": "http://localhost:5173",
+								"description": "http://localhost:5173",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:4001/api/users/checkpin/123456",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"users",
+								"checkpin",
+								"123456"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SecurityIdMobile",
+			"item": [
+				{
+					"name": "Reset-mobile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjUyNmVhMzhjZTNkZGExN2E5NTgxZiIsImlhdCI6MTY5NjkzNzAwNiwiZXhwIjoxNjk2OTQwNjA2fQ.qW6EH78Fie85KOullsuGfElT-QrBdr4pVkarXuEnodQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:4001/api/users/reset-mobile-id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"users",
+								"reset-mobile-id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset-mobile/token",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjUyNmVhMzhjZTNkZGExN2E5NTgxZiIsImlhdCI6MTY5NjkzNzAwNiwiZXhwIjoxNjk2OTQwNjA2fQ.qW6EH78Fie85KOullsuGfElT-QrBdr4pVkarXuEnodQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"personalPhoneId\":\"123567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:4001/api/users/reset-mobile-id/454323",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"users",
+								"reset-mobile-id",
+								"454323"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "securityPassword",
+			"item": [
+				{
+					"name": "Reset-password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Origin",
+								"value": "http://localhost:5173",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dni\" : \"10000015\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:4001/api/users/reset-password",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"users",
+								"reset-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset-password/token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Origin",
+								"value": "{{Origin}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dni\" : \"10000015\",\r\n    \"password\":\"23232323\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:4001/api/users/reset-password/448235",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"users",
+								"reset-password",
+								"448235"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

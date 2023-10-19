@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "1c0bdb37-f7b9-4ae7-bb26-e6b2176c6b8d",
+		"name": "Professorship",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10337977"
+	},
+	"item": [
+		{
+			"name": "Professorships",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjU0MjQxMDI2YmNmZTMyOGMzY2YxZCIsImlhdCI6MTY5Njk0MDc2MSwiZXhwIjoxNjk2OTQ0MzYxfQ.rmeFUY9LBw6Uw5LVsKEPFo83bK8m4h8n3EHHrdgC7YY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:4001/api/professorship/652526fd38ce3dda17a95893",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"professorship",
+						"652526fd38ce3dda17a95893"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProfessorshipsRouteToNotStudent",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjUyNmU2MzhjZTNkZGExN2E5NTgwNiIsImlhdCI6MTY5NjkzNzkyOCwiZXhwIjoxNjk2OTQxNTI4fQ.50MqwL5ANg0Hjp6i6oMz_0FqZAA-jz4JYtAUsI7gPvM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:4001/api/professorship-info/professorship/652526fd38ce3dda17a95893/semester/652526fd38ce3dda17a95899",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"professorship-info",
+						"professorship",
+						"652526fd38ce3dda17a95893",
+						"semester",
+						"652526fd38ce3dda17a95899"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProfessorshipsRouteToStudents",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjUyNmVmMzhjZTNkZGExN2E5NTgzZCIsImlhdCI6MTY5NjkzODA0MiwiZXhwIjoxNjk2OTQxNjQyfQ.nGfU2d2PJ0PJ5cx2ZYQLaB3FmSbwznandLOh1B5TeBU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:4001/api/students/professorship-info/professorship/652526fd38ce3dda17a95893/semester/652526fd38ce3dda17a95899",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"students",
+						"professorship-info",
+						"professorship",
+						"652526fd38ce3dda17a95893",
+						"semester",
+						"652526fd38ce3dda17a95899"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

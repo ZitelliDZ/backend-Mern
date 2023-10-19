@@ -1,0 +1,258 @@
+{
+	"info": {
+		"_postman_id": "95eda867-7e84-40b0-b91f-96c22b7481af",
+		"name": "Resources",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10337977"
+	},
+	"item": [
+		{
+			"name": "ProfileAdmin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjUyNmU1MzhjZTNkZGExN2E5NTdmYiIsImlhdCI6MTY5NjkzNzcwMiwiZXhwIjoxNjk2OTQxMzAyfQ.2RX_-rlkKZbTRstOjsgZJxshb9eYkkU_BSlztrvhJmw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:4001/api/admin/profile",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"admin",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProfileBedel",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjUyNmU2MzhjZTNkZGExN2E5NTgwMCIsImlhdCI6MTY5NjkzNzc5NSwiZXhwIjoxNjk2OTQxMzk1fQ.oD5fijD9EaZNqUFWkuk0hU7BIEJPIqB_DL8uwNIcBaA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:4001/api/bedels/profile",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"bedels",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProfileProfessor",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjUyNmU2MzhjZTNkZGExN2E5NTgwNiIsImlhdCI6MTY5NjkzNzkyOCwiZXhwIjoxNjk2OTQxNTI4fQ.50MqwL5ANg0Hjp6i6oMz_0FqZAA-jz4JYtAUsI7gPvM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:4001/api/professors/profile",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"professors",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProfileStudent",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjUyNmVmMzhjZTNkZGExN2E5NTgzZCIsImlhdCI6MTY5NjkzODA0MiwiZXhwIjoxNjk2OTQxNjQyfQ.nGfU2d2PJ0PJ5cx2ZYQLaB3FmSbwznandLOh1B5TeBU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:4001/api/students/profile",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"students",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProfessorshipsAdmin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjUyNmU1MzhjZTNkZGExN2E5NTdmYiIsImlhdCI6MTY5NjkzNzcwMiwiZXhwIjoxNjk2OTQxMzAyfQ.2RX_-rlkKZbTRstOjsgZJxshb9eYkkU_BSlztrvhJmw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:4001/api/admin/professorships",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"admin",
+						"professorships"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProfessorshipsBedel",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjUyNmU2MzhjZTNkZGExN2E5NTgwMCIsImlhdCI6MTY5NjkzNzc5NSwiZXhwIjoxNjk2OTQxMzk1fQ.oD5fijD9EaZNqUFWkuk0hU7BIEJPIqB_DL8uwNIcBaA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:4001/api/bedels/professorships",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"bedels",
+						"professorships"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProfessorshipsProfessor",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjU0MjQxMDI2YmNmZTMyOGMzY2YxZCIsImlhdCI6MTY5Njk0MDc2MSwiZXhwIjoxNjk2OTQ0MzYxfQ.rmeFUY9LBw6Uw5LVsKEPFo83bK8m4h8n3EHHrdgC7YY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:4001/api/professors/professorships",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"professors",
+						"professorships"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProfessorshipsStudent",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjUyNmVmMzhjZTNkZGExN2E5NTgzZCIsImlhdCI6MTY5NjkzODA0MiwiZXhwIjoxNjk2OTQxNjQyfQ.nGfU2d2PJ0PJ5cx2ZYQLaB3FmSbwznandLOh1B5TeBU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:4001/api/students/professorships",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"students",
+						"professorships"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

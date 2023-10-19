@@ -1,0 +1,313 @@
+{
+	"info": {
+		"_postman_id": "ad39ced8-b8fb-4ed0-bd0f-ccb292422a7b",
+		"name": "Classday",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10337977"
+	},
+	"item": [
+		{
+			"name": "Classdays",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjU0MjQxMDI2YmNmZTMyOGMzY2YxZCIsImlhdCI6MTY5Njk0MDc2MSwiZXhwIjoxNjk2OTQ0MzYxfQ.rmeFUY9LBw6Uw5LVsKEPFo83bK8m4h8n3EHHrdgC7YY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "http://localhost:5173",
+						"description": "http://localhost:5173",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:4001/api/classdays/professorship/65254255026bcfe328c3cf9b/semester/65254256026bcfe328c3cfa1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"classdays",
+						"professorship",
+						"65254255026bcfe328c3cf9b",
+						"semester",
+						"65254256026bcfe328c3cfa1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Finishclass",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjU0MjQxMDI2YmNmZTMyOGMzY2YxZCIsImlhdCI6MTY5Njk0MDc2MSwiZXhwIjoxNjk2OTQ0MzYxfQ.rmeFUY9LBw6Uw5LVsKEPFo83bK8m4h8n3EHHrdgC7YY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "http://localhost:5173",
+						"description": "http://localhost:5173",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:4001/api/classdays/finishclass/65254267026bcfe328c3d049",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"classdays",
+						"finishclass",
+						"65254267026bcfe328c3d049"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Attendance-list",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZjYyM2VmM2Q0Yzc4YzIxZjk2MThkMiIsImlhdCI6MTY5Mzg2MDU3MSwiZXhwIjoxNjkzODY0MTcxfQ.C9HxvjUgSimVYiHBTbIDh9OAC_8NU981CPca0-GmH0Y",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "http://localhost:5173",
+						"description": "http://localhost:5173",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:4001/api/classdays/attendance-list/64f623fd3d4c78c21f96193c",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"classdays",
+						"attendance-list",
+						"64f623fd3d4c78c21f96193c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add-attendance",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjU0MjQxMDI2YmNmZTMyOGMzY2YxZCIsImlhdCI6MTY5Njk0MTI1MiwiZXhwIjoxNjk2OTQ0ODUyfQ.-yV7ACkQ8V5WXcT6SJIb-yyRvurHHqJpRGKQQVIr8NA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "http://localhost:5173",
+						"description": "http://localhost:5173",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\":\"6525423f026bcfe328c3cf13\",\r\n    \"rol\":\"6525424e026bcfe328c3cf6e\",\r\n    \"attendanceType\":\"65254258026bcfe328c3cfb3\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:4001/api/classdays/add-attendance/65254268026bcfe328c3d04d",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"classdays",
+						"add-attendance",
+						"65254268026bcfe328c3d04d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add-attendance-record",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjU0MjQxMDI2YmNmZTMyOGMzY2YxZCIsImlhdCI6MTY5Njk0MTI1MiwiZXhwIjoxNjk2OTQ0ODUyfQ.-yV7ACkQ8V5WXcT6SJIb-yyRvurHHqJpRGKQQVIr8NA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "http://localhost:5173",
+						"description": "http://localhost:5173",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"localized\":\"false\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:4001/api/classdays/attendance-record/65254268026bcfe328c3d04d",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"classdays",
+						"attendance-record",
+						"65254268026bcfe328c3d04d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add-attendance-record-withPin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjU0MjQxMDI2YmNmZTMyOGMzY2YxZCIsImlhdCI6MTY5Njk0MTI1MiwiZXhwIjoxNjk2OTQ0ODUyfQ.-yV7ACkQ8V5WXcT6SJIb-yyRvurHHqJpRGKQQVIr8NA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "http://localhost:5173",
+						"description": "http://localhost:5173",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"localized\":\"false\",\r\n    \"pin\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:4001/api/classdays/attendance-record/with-pin/65254268026bcfe328c3d04d",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"classdays",
+						"attendance-record",
+						"with-pin",
+						"65254268026bcfe328c3d04d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Present-student-list",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjU0MjQxMDI2YmNmZTMyOGMzY2YxZCIsImlhdCI6MTY5Njk0MzQzMywiZXhwIjoxNjk2OTQ3MDMzfQ.q0drT52198Km5Iff55EJDQ-1DsFgqwI0WAGoIfFWiLg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "http://localhost:5173",
+						"description": "http://localhost:5173",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:4001/api/classdays/present-student-list/65254268026bcfe328c3d04d",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"classdays",
+						"present-student-list",
+						"65254268026bcfe328c3d04d"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

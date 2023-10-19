@@ -1,0 +1,266 @@
+{
+    "1": {
+        "message": "Error al intentar iniciar sesión.",
+        "code": "500"
+    },
+    "2": {
+        "message": "El dni o la contraseña es incorrecta.",
+        "code": "401"
+    },
+    "3": {
+        "message": "Debe cambiar su contraseña.",
+        "code": "401"
+    },
+    "4": {
+        "message": "El usuario no está registrado.",
+        "code": "401"
+    },
+    "5": {
+        "message": "Error al generar el email para el restablecimiento de contraseña.",
+        "code": "500"
+    },
+    "6": {
+        "message": "Error al recuperar el token - Comuniquese al área de sistemas.",
+        "code": "500"
+    },
+    "7": {
+        "message": "El código de recuperación no es válido.",
+        "code": "401"
+    },
+    "8": {
+        "message": "Error al nodificar la contraseña.",
+        "code": "500"
+    },
+    "9": {
+        "message": "Error al generar el email para el cambio del dispositivo móvil.",
+        "code": "500"
+    },
+    "10": {
+        "message": "Token de sesión no válido.",
+        "code": "401"
+    },
+    "11": {
+        "message": "Token de sesión no válido.",
+        "code": "401"
+    },
+    "12": {
+        "message": "El token expiró.",
+        "code": "401"
+    },
+    "13": {
+        "message": "No se encuentra autenticado.",
+        "code": "401"
+    },
+    "14": {
+        "message": "Error al autenticar el usuario.",
+        "code": "500"
+    },
+    "15": {
+        "message": "Ya existe un usuario utilizando el dispositivo.",
+        "code": "409"
+    },
+    "16": {
+        "message": "Error al cambiar el dispositivo.",
+        "code": "500"
+    },
+    "17": {
+        "message": "El usuario ya se encuentra registrado.",
+        "code": "409"
+    },
+    "18": {
+        "message": "Error al registrar el usuario.",
+        "code": "500"
+    },
+    "19": {
+        "message": "Acceso denegado.",
+        "code": "403"
+    },
+    "20": {
+        "message": "Error interno del servidor.",
+        "code": "500"
+    },
+    "21": {
+        "message": "Debe verificar su dispositivo.",
+        "code": "401"
+    },
+    "22": {
+        "message": "Error al intentar recuperar las cátedras.",
+        "code": "500"
+    },
+    "23": {
+        "message": "Restablece el pin si lo has olvidado.",
+        "code": "401"
+    },
+    "24": {
+        "message": "Error al guardar los datos iniciales.",
+        "code": "500"
+    },
+    "25": {
+        "message": "Error al generar el email para el cambio del pin de seguridad.",
+        "code": "500"
+    },
+    "26": {
+        "message": "La cátedra no fue encontrada.",
+        "code": "401"
+    },
+    "27": {
+        "message": "La clase no fue encontrada.",
+        "code": "401"
+    },
+    "28": {
+        "message": "La clase se encuentra finalizada.",
+        "code": "401"
+    },
+    "29": {
+        "message": "Error al intentar generar los registros de asistencia.",
+        "code": "500"
+    },
+    "30": {
+        "message": "Error al intentar obtener la lista de asistencia.",
+        "code": "500"
+    },
+    "31": {
+        "message": "La clase sigue activa.",
+        "code": "401"
+    },
+    "32": {
+        "message": "El rol no se encuentra registrado.",
+        "code": "401"
+    },
+    "33": {
+        "message": "El tipo de asistencia no se encuentra registrada.",
+        "code": "401"
+    },
+    "34": {
+        "message": "Error al buscar los roles.",
+        "code": "500"
+    },
+    "35": {
+        "message": "Error al buscar los tipos de asistencias.",
+        "code": "500"
+    },
+    "36": {
+        "message": "Error al buscar las aulas.",
+        "code": "500"
+    },
+    "37": {
+        "message": "El departamento no esta registrado.",
+        "code": "500"
+    },
+    "38": {
+        "message": "Error al intentar buscar la cátedra.",
+        "code": "500"
+    },
+    "39": {
+        "message": "Error al buscar los dias de clase.",
+        "code": "500"
+    },
+    "40": {
+        "message": "No se encontró el semestre.",
+        "code": "401"
+    },
+    "41": {
+        "message": "No se encontró la cátedra.",
+        "code": "401"
+    },
+    "42": {
+        "message": "No se encontraron dias de clases para la catedra y el semestre seleccionado.",
+        "code": "401"
+    },
+    "43": {
+        "message": "No se encuentra en horario de clase.",
+        "code": "401"
+    },
+    "44": {
+        "message": "Error al guardar el registro de asistencia.",
+        "code": "500"
+    },
+    "45": {
+        "message": "Error al buscar la presencialidad de los usuarios.",
+        "code": "500"
+    },
+    "46": {
+        "message": "El pin no es válido.",
+        "code": "401"
+    },
+    "47": {
+        "message": "Genere el pin de validación.",
+        "code": "401"
+    },
+    "48": {
+        "message": "Error al verificar el Pin.",
+        "code": "500"
+    },
+    "400": {
+        "message": "Solicitud incorrecta. Comprueba los datos enviados.",
+        "code": "400"
+    },
+    "401": {
+        "message": "No autorizado",
+        "code": "401"
+    },
+    "403": {
+        "message": "Prohibido",
+        "code": "403"
+    },
+    "404": {
+        "message": "El recurso solicitado no fue encontrado.",
+        "code": "404"
+    },
+    "405": {
+        "message": "Método no permitido",
+        "code": "405"
+    },
+    "408": {
+        "message": "Tiempo de espera agotado",
+        "code": "408"
+    },
+    "409": {
+        "message": "Conflicto",
+        "code": "409"
+    },
+    "410": {
+        "message": "Ya no existe",
+        "code": "410"
+    },
+    "413": {
+        "message": "Solicitud demasiado grande",
+        "code": "413"
+    },
+    "415": {
+        "message": "Tipo de medio no admitido",
+        "code": "415"
+    },
+    "418": {
+        "message": "Soy una tetera",
+        "code": "418"
+    },
+    "429": {
+        "message": "Demasiadas solicitudes",
+        "code": "429"
+    },
+    "500": {
+        "message": "Error interno del servidor",
+        "code": "500"
+    },
+    "501": {
+        "message": "No implementado",
+        "code": "501"
+    },
+    "502": {
+        "message": "Puerta de enlace incorrecta",
+        "code": "502"
+    },
+    "503": {
+        "message": "Servicio no disponible. Inténtalo más tarde.",
+        "code": "503"
+    },
+    "504": {
+        "message": "Tiempo de espera de la puerta de enlace agotado",
+        "code": "504"
+    },
+    "505": {
+        "message": "Versión de HTTP no compatible",
+        "code": "505"
+    }
+}

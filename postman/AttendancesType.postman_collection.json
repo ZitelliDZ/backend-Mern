@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "3e336060-7170-4ef5-b857-e2917fa8dc39",
+		"name": "AttendancesType",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10337977"
+	},
+	"item": [
+		{
+			"name": "Attendances-type",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjUyNmVhMzhjZTNkZGExN2E5NTgxZiIsImlhdCI6MTY5NjkzNzM1NiwiZXhwIjoxNjk2OTQwOTU2fQ.bmJ0X35Jw0hVWra9MU9L3R8nvktDRtHCUQnmAtsnMtQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:4001/api/attendances-type",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"attendances-type"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

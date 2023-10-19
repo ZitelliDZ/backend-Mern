@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "1b8eb551-710e-45fd-b28b-431d1703b3ca",
+		"name": "Classroom",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10337977"
+	},
+	"item": [
+		{
+			"name": "Classroom",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjUyNmVmMzhjZTNkZGExN2E5NTgzZCIsImlhdCI6MTY5NjkzODA0MiwiZXhwIjoxNjk2OTQxNjQyfQ.nGfU2d2PJ0PJ5cx2ZYQLaB3FmSbwznandLOh1B5TeBU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:4001/api/classrooms/652526fc38ce3dda17a9588b/department",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"classrooms",
+						"652526fc38ce3dda17a9588b",
+						"department"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
